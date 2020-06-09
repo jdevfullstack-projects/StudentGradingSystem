@@ -24,15 +24,7 @@ public class StuApplicationController {
 		
 		return "index";
 	}
-	
-	//@RequestMapping("/new")
-	//public String showNewProductPage(Model model) {
-	//	Product product = new Product();
-	//	model.addAttribute("product", product);
-	//	
-	//	return "new_product";
-	//}
-	
+		
 	@RequestMapping(value = "/save", method = RequestMethod.POST)
 	public String saveStuData(@ModelAttribute("student") Student student) {
 		service.save(student);
@@ -49,9 +41,4 @@ public class StuApplicationController {
 		return mav;
 	}
 	
-	//@RequestMapping("/delete/{id}")
-	//public String deleteProduct(@PathVariable(name = "id") int id) {
-	//	service.delete(id);
-	//	return "redirect:/";		
-	//}
 }
