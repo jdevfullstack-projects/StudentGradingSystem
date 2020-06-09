@@ -9,12 +9,12 @@ import javax.persistence.Id;
 public class Student {
 	private Long id;
 	private String name;
-	private float roboticsGrade;
+	private String roboticsGrade;
 
 	protected Student() {
 	}
 
-	protected Student(Long id, float roboticsGrade) {
+	protected Student(Long id, String roboticsGrade) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -39,11 +39,11 @@ public class Student {
 		this.name = name;
 	}
 
-	public float getRoboticsGrade() {
+	public String getRoboticsGrade() {
 		return roboticsGrade;
 	}
 
-	public void setRoboticsGrade(float roboticsGrade) {
+	public void setRoboticsGrade(String roboticsGrade) {
 		this.roboticsGrade = roboticsGrade;
 	}
 
