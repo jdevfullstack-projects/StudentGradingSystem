@@ -13,7 +13,24 @@ the naming convention is critical, for example:
 
 Now, you might not notice this when you have `clear-drop` setting because
 Spring Boot automatically solves the issue. But when you want the persistent
-database record, you must set it to `none`. 	
+database record, you must set it to `none`. 
+
+`application.properties`:
+```
+spring.jpa.properties.hibernate.jdbc.time_zone=UTC
+spring.jpa.hibernate.ddl-auto=none
+spring.jpa.open-in-view=true
+spring.datasource.url=jdbc:mysql://localhost:3306/gradingSystem?serverTimezone=UTC&useLegacyDatetimeCode=false
+spring.datasource.username=root
+spring.datasource.password=
+logging.level.root=WARN
+```
+
+As you can in the application properties, for this project to work, make sure
+you have MySQL installed in your computer with `gradingSystem` database.
+
+Now, the time zone was configured twice, first in JDBC and second, in server.
+Without this, it may cause errors if the time zone is not properly configured.	
 
 ## Q&A
 
