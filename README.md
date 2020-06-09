@@ -14,7 +14,7 @@ the naming convention is critical, for example:
 Now, you might not notice this when you have `create-drop` setting
 in `spring.jpa.hibernate.ddl-auto` because
 Spring Boot automatically solves the issue.
-The `clear-drop` always create a fresh environment setup and
+The `create-drop` always create a fresh environment setup and
 solve conflicts between Java classes and MySQL.
 
 But when you want the persistent
@@ -31,11 +31,12 @@ spring.datasource.password=
 logging.level.root=WARN
 ```
 
-As you can in the application properties, for this project to work, make sure
-you have MySQL installed in your computer with `gradingSystem` database.
+As you can see in the application properties, for this project to work, make sure
+you have MySQL installed in your computer with `gradingSystem` database and
+create `student` table with initial data.
 
 Now, the time zone was configured twice, first in JDBC and second, in server env.
-Without this, it may cause errors if the time zone is not properly configured.	
+Without these settings, errors may occur.	
 
 ## Q&A
 
