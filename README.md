@@ -5,8 +5,8 @@
 In this Spring Boot project, I used JPA for persistence, MySQL being the 
 database.
 
-Take note, when Spring Boot maps the service class into the database,
-the naming convention is critical, for example:
+Take note, when Spring Boot (Hibernate actually) maps the java 
+class into the database, the naming convention is critical, for example:
 
 `roboticsGrade` will be mapped in the database column as
 `robotics_grade`.
