@@ -9,8 +9,6 @@ import javax.persistence.Id;
 public class Student {
 	private Long id;
 	private String name;
-	//private String brand;
-	//private String madein;
 	private float roboticsGrade;
 
 	protected Student() {
@@ -20,8 +18,6 @@ public class Student {
 		super();
 		this.id = id;
 		this.name = name;
-		//this.brand = brand;
-		//this.madein = madein;
 		this.roboticsGrade = roboticsGrade;
 	}
 
