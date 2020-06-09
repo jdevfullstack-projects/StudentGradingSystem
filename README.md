@@ -14,8 +14,8 @@ class into the database, the naming convention is critical, for example:
 Now, you might not notice this when you have `create-drop` setting
 in `spring.jpa.hibernate.ddl-auto` because
 Spring Boot automatically solves the issue.
-The `create-drop` always create a fresh environment setup and
-solve conflicts between Java classes and MySQL.
+The `create-drop` always creates a fresh environment setup and
+solves conflicts between Java classes and MySQL.
 
 But when you want the persistent
 database record, you must set it to `none`. 
