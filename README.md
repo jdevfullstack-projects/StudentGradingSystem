@@ -6,8 +6,7 @@ In this Spring Boot project, I used JPA for persistence, MySQL being the
 database.
 
 Take note, when Spring Boot (Hibernate actually) maps the java 
-class (domain entity class (POJO)) into the database, the naming convention
-is critical, for example:
+class into the database, the naming convention is critical, for example:
 
 `roboticsGrade` will be mapped in the database column as
 `robotics_grade`.
@@ -37,7 +36,10 @@ you have MySQL installed in your computer with `gradingSystem` database and
 create `student` table with initial data.
 
 Now, the time zone was configured twice, first in JDBC and second, in server env.
-Without these settings, errors may occur.	
+Without these settings, errors may occur.
+
+Remember, the Spring Framework is great already. The Spring Boot takes that to another
+level of abstraction.	
 
 ## Q&A
 
