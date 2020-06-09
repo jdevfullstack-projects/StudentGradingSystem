@@ -11,8 +11,13 @@ the naming convention is critical, for example:
 `roboticsGrade` will be mapped in the database column as
 `robotics_grade`.
 
-Now, you might not notice this when you have `clear-drop` setting because
-Spring Boot automatically solves the issue. But when you want the persistent
+Now, you might not notice this when you have `create-drop` setting
+in `spring.jpa.hibernate.ddl-auto` because
+Spring Boot automatically solves the issue.
+The `clear-drop` always create a fresh environment setup and
+solve conflicts between Java classes and MySQL.
+
+But when you want the persistent
 database record, you must set it to `none`. 
 
 `application.properties`:
@@ -29,7 +34,7 @@ logging.level.root=WARN
 As you can in the application properties, for this project to work, make sure
 you have MySQL installed in your computer with `gradingSystem` database.
 
-Now, the time zone was configured twice, first in JDBC and second, in server.
+Now, the time zone was configured twice, first in JDBC and second, in server env.
 Without this, it may cause errors if the time zone is not properly configured.	
 
 ## Q&A
