@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8"/>
+<title>Student Grading System: Robotics</title>
+</head>
+<body>
+<div align="center">
+    <h1>Student Grading System Robotics Subject</h1>
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Student Index</th>
+                <th>Name</th>
+                <th>Robotics Grade</th>
+                <th>Edit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="student : ${listStudent}">
+            	<td th:text="${student.id}">Student ID</td>
+                <td th:text="${student.name}">Name</td>
+		<td th:text="${student.roboticsGrade}">Robotics Grade</td>
+                <td>
+                	<a th:href="@{'/edit/' + ${student.id}}">Edit</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>    
+</body>
+</html>
