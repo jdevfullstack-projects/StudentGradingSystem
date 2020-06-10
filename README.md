@@ -16,7 +16,6 @@ in `spring.jpa.hibernate.ddl-auto` because
 Spring Boot automatically solves the issue.
 The `create-drop` always creates a fresh environment setup and
 solves conflicts between Java classes and MySQL.
-
 But when you want the persistent
 database record, you must set it to `none`. 
 
