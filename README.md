@@ -32,7 +32,9 @@ logging.level.root=WARN
 
 As you can see in the application properties, for this project to work, make sure
 you have MySQL installed in your computer with `gradingSystem` database and
-create `student` table with initial data.
+`student` table with initial data, at least the name of the student. There are 
+three columns you must satisfy, `id`, `name`, `robotics_grade`. `id` is
+the primary key with auto-increment.
 
 Now, the time zone was configured twice, first in JDBC and second, in server env.
 Without these settings, errors may occur.
