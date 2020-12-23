@@ -45,9 +45,8 @@ level of abstraction.
 
 ## Q&A
 
-If you have questions, please feel free to ask me: 
-
-<mongAlvarez@gmail.com>
+If you have questions, please utilize
+the `Discussions` feature of GitHub.
    
 You can also create a pull request or raise
 an issue to start the discussion or query/ies.
